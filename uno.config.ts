@@ -21,7 +21,7 @@ export default defineConfig({
   },
   rules: [
       // START polyfill custom scss rules
-      [/^(p|m)-?(t|b|l|r)?-(\d+)$/, ([, space='', dir = '', body= 1]: [string, string?, string]) => {
+      [/^(p|m)-?(t|b|l|r)?-(\d+)$/, ([, space='', dir = '', body='1']) => {
         const map: { [key: string]: string } = {
           p: 'padding',
           m: 'margin'
