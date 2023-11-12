@@ -8,14 +8,12 @@ const Navbar = () => {
             </h1>
             <div className='flex gap-10px '>
                 <div
-                    className='p-10px rounded'
-                    hover='bg-gray-200 cursor-pointer'
+                    className='p-10px rounded hover:bg-gray-200 hover:cursor-pointer'
                 >
                     My Stories
                 </div>
                 <div
-                    className='p-10px rounded'
-                    hover='bg-gray-200 cursor-pointer'
+                    className='p-10px rounded hover:bg-gray-200 hover:cursor-pointer'
                 >
                     My Skills
                 </div>
