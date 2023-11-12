@@ -21,19 +21,19 @@ export default defineConfig({
   },
   rules: [
       // START polyfill custom scss rules
-      [/^(p|m)-?(t|b|l|r)?-(\d+)$/, ([, space, dir, body]: string[]) => {
-        const map = {
+      [/^(p|m)-?(t|b|l|r)?-(\d+)$/, ([, space='', dir = '', body= 1]: [string, string?, string]) => {
+        const map: { [key: string]: string } = {
           p: 'padding',
           m: 'margin'
         }
-        const dirMap = {
+        const dirMap: { [key: string]: string } = {
           t: '-top',
           b: '-bottom',
           l: '-left',
           r: '-right'
         }
         return {
-          [`${map[space]}${dirMap[dir] || ''}`]: `${parseInt(body)*4}px !important`
+          [`${map[space]}${dirMap[dir]}`]: `${parseInt(body)*4}px !important`
         }
       }],
       [/^(p|m)-(h|v)-(\d+)$/, ([, space, dir, body]: string[]) => {
