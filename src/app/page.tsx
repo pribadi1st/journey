@@ -1,11 +1,55 @@
-import Image from 'next/image'
+
 import Navbar from '@/app/navbar'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between max-w-1080px m-auto">
+    <main className="flex min-h-screen flex-col items-center w-full m-auto">
       <Navbar />
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className='flex h-600px w-full'>
+        <div
+          className='flex-initial w-30%'
+          style={{
+            backgroundImage: `url(/my-life.jpeg)`,  // coming from public folder
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            width: "50%",
+            height: "100%",
+          }}
+        />
+        <blockquote className='text-18px flex item-center flex-col justify-center'>
+          <span className='italic '>Etch your story in the annals of time, for life is but a stage, and you, the masterful playwright.</span>
+          <span className='italic text-14px'>- Shakespear</span>
+        </blockquote>
+      </div>
+      <div className='p-24px leading-28px text-center bg-#AFDCEC'>
+        <p>
+            I'm delighted to have you step into the virtual realm that is my personal website.
+            Here, you'll find a curated collection of my passions, endeavors, and creative musings.
+            Your presence is more than just a click; it's an exploration into the various facets of who I am and what I love.
+        </p>
+
+        <p>
+            Feel at home as you navigate through the pages, from insightful blog posts to showcased projects.
+            This isn't just a website; it's a dynamic space where ideas flourish, and connections are made.
+            Your curiosity is the key, and I invite you to unlock the doors to inspiration.
+        </p>
+
+        <p>
+            Welcome, explorer! Take your time, enjoy the journey, and thank you for being a part of this digital adventure with me.
+        </p>
+      </div>
+      {/* <div className=' w-full '>
+        <Image
+          src="/my-life.jpeg"
+          alt="Vercel Logo"
+          height={10}
+          width={1080}
+          quality={100}
+          objectFit='scale-down'
+        />
+      </div> */}
+      {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -15,7 +59,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src="/my-life.jpeg"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
@@ -24,9 +68,9 @@ export default function Home() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      {/* <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
@@ -105,7 +149,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   )
 }
