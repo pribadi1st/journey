@@ -1,5 +1,5 @@
 'use client'
-import Laptop from './laptop';
+import Laptop from '@/app/home/Laptop';
 function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center w-full m-auto">
