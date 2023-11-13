@@ -23,9 +23,9 @@ export default function Home() {
       </div>
       <div className='p-24px leading-28px text-center bg-#AFDCEC'>
         <p>
-            I'm delighted to have you step into the virtual realm that is my personal website.
-            Here, you'll find a curated collection of my passions, endeavors, and creative musings.
-            Your presence is more than just a click; it's an exploration into the various facets of who I am and what I love.
+            I am delighted to have you step into the virtual realm that is my personal website.
+            Here, you will find a curated collection of my passions, endeavors, and creative musings.
+            Your presence is more than just a click; it is an exploration into the various facets of who I am and what I love.
         </p>
 
         <p>
