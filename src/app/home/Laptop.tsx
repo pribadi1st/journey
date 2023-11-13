@@ -3,16 +3,36 @@ import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import HomePage from './HomePage';
+import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 interface ModelProps {
   [key: string]: any;
+}
+
+type GLTFResult = GLTF & {
+  nodes: {
+    'Cube008': THREE.Mesh;
+    'Cube008_1': THREE.Mesh;
+    'Cube008_2': THREE.Mesh;
+    'Cube002': THREE.Mesh;
+    'Cube002_1': THREE.Mesh;
+    touchbar: THREE.Mesh;
+    keyboard: THREE.Mesh;
+  },
+  materials: {
+    'matte.001': THREE.MeshStandardMaterial;
+    aluminium: THREE.MeshStandardMaterial;
+    keys: THREE.MeshStandardMaterial;
+    trackpad: THREE.MeshStandardMaterial;
+    touchbar: THREE.MeshStandardMaterial;
+  }
 }
 
 function Model(props: ModelProps) {
   const group = useRef<any>();
 
   // Load model
-  const { nodes, materials } = useGLTF('/mac-draco.glb')
+  const { nodes, materials } = useGLTF('/mac-draco.glb') as GLTFResult
 
   // Make it float
   useFrame((state) => {
@@ -30,8 +50,8 @@ function Model(props: ModelProps) {
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
-            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
-              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
+            <Html className="w-334px h-216px bg-white" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
+              <div className="h-full w-full" onPointerDown={(e) => e.stopPropagation()}>
                 <HomePage />
               </div>
             </Html>

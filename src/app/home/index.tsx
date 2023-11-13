@@ -2,7 +2,7 @@
 import Laptop from '@/app/home/Laptop';
 function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center w-full m-auto">
+        <main className="flex calc(100vh-70px) flex-col items-center w-full m-auto">
           <div className='flex h-500px w-full'>
             <div
               className='flex-initial w-30%'
@@ -22,7 +22,7 @@ function Home() {
               <span className='italic text-14px'>- Shakespear</span>
             </blockquote> */}
           </div>
-          <div className='p-24px leading-28px text-center bg-#AFDCEC'>
+          <div className='p-24px leading-28px text-center bg-#AFDCEC min-h-215px'>
             <p>
                 I`m delighted to have you step into the virtual realm that is my personal website.
                 Here, you will find a curated collection of my passions, endeavors, and creative musings.
