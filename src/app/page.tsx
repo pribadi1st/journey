@@ -23,14 +23,14 @@ export default function Home() {
       </div>
       <div className='p-24px leading-28px text-center bg-#AFDCEC'>
         <p>
-            I am delighted to have you step into the virtual realm that is my personal website.
+            I`m delighted to have you step into the virtual realm that is my personal website.
             Here, you will find a curated collection of my passions, endeavors, and creative musings.
             Your presence is more than just a click; it is an exploration into the various facets of who I am and what I love.
         </p>
 
         <p>
             Feel at home as you navigate through the pages, from insightful blog posts to showcased projects.
-            This isn't just a website; it's a dynamic space where ideas flourish, and connections are made.
+            This is not just a website; it`s a dynamic space where ideas flourish, and connections are made.
             Your curiosity is the key, and I invite you to unlock the doors to inspiration.
         </p>
 
