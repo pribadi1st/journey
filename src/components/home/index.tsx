@@ -1,5 +1,5 @@
 'use client'
-import Laptop from '@/app/home/Laptop';
+import Laptop from '@/components/home/Laptop';
 function Home() {
     return (
         <main className="flex calc(100vh-70px) flex-col items-center w-full m-auto">

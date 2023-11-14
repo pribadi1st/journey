@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import './laptop.css';
+import Link from 'next/link'
 function TypeWriter(){
     const listText = ['Welkom', "Welcome", "Herzlichen Willkomen", 'Bienvenue', 'Selamat Datang']
     const [indexList, setIndexList] = useState(0);
@@ -53,16 +54,18 @@ function HomePage() {
                         My life my journey
                     </h1>
                     <div className='flex gap-10px '>
-                        <div
+                        <Link
+                            href="/journey"
                             className='text-xs rounded hover:bg-gray-200 hover:cursor-pointer p-4px'
                         >
                             Journey
-                        </div>
-                        <div
+                        </Link>
+                        <Link
+                            href="/skills"
                             className='text-xs rounded hover:bg-gray-200 hover:cursor-pointer p-4px'
                         >
                             Skills
-                        </div>
+                        </Link>
                     </div>
                 </div>  
             </nav>
