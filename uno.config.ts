@@ -59,7 +59,7 @@ export default defineConfig({
   ],
   shortcuts: [
     ['base-h', 'h-[calc(100vh-70px)]'],
-    ['header-1', 'text-4xl font-bold'],
+    ['header-1', 'text-4xl'],
   ],
   presets: [
       presetUno(),
