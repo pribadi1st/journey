@@ -19,7 +19,6 @@ function Home() {
                 Take your time, enjoy the journey, and thank you for being a part of this digital adventure with me.
               </p>
             </div>
-
           </div>
         </main>
     )

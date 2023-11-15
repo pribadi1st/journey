@@ -1,9 +1,18 @@
 import Image from 'next/image'
+import MyJourney from '@/components/journey/index'
 
 function Journey(){
+    const profile = {
+        name: 'Pribadi Ridwan Mulyono',
+        title: 'Full stack developer',
+        email: 'pribadiridwan1st@©mail.com',
+        phone: '(+49) 17660943972',
+        address: 'Wollanktraße 54c, 13359 Berlin',
+        dateOfBirth: '05. December 1995',
+    }
     return(
-        <div className="w-full min-h-100vh">
-            <div className='relative flex flex-col'>
+        <div className="w-full min-h-100vh flex flex-col gap-20px">
+            <div className='relative flex flex-col '>
                 <Image
                     src="/background.webp"
                     width={1920}
@@ -21,27 +30,30 @@ function Journey(){
                         alt="Profile image"
                     />
                     <div className='flex flex-col p-20px'>
-                        <h1 className='text-26px'>Pribadi Ridwan Mulyono</h1>
-                        <h3 className='text-18px'>Full stack developer</h3>
+                        <h1 className='text-26px'>{profile.name}</h1>
+                        <h3 className='text-18px'>{profile.title}</h3>
                         <br />
                         <p className='text-16px'>Phone:</p>
-                        <p className='text-16px'>123-456-7890</p>
+                        <p className='text-16px'>{profile.phone}</p>
                         <br />
                         <p className='text-16px'>Email:</p>
-                        <p className='text-16px'>(+49) 17660943972</p>
+                        <p className='text-16px'>{profile.email}</p>
                         <br />
                         <p className='text-16px'>Address:</p>
                         <p className='text-16px'>
-                            Wollanktraße 54c
-                            <br />
-                            13359 Berlin
+                            {profile.address}
                         </p>
                         <br />
                         <p className='text-16px'>Date of Birth:</p>
-                        <p className='text-16px'>05. December 1995</p>
+                        <p className='text-16px'>{profile.dateOfBirth}</p>
                     </div>
                 </div>
             </div>
+            <div className='border-y-1px border-black w-max-1080px p-y-30px flex align-center justify-center'>
+                <h1 className='leading-45px text-38px'>My journey</h1>
+            </div>
+            <MyJourney className="w-full p-y-60px" />
+            
         </div>
     )   
 }
