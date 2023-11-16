@@ -1,4 +1,7 @@
 import Image from "next/image"
+import useIntersectionObserver from '@/utils/observer';
+import './index.css'
+import { useRef } from "react";
 
 interface IStory {
     image?: string
@@ -8,8 +11,10 @@ interface IStory {
     quote?: string
 }
 function Story({story, quote}: {story?: IStory; quote?: string}){
+    const componentRef = useRef(null);
+    const isVisible = useIntersectionObserver(componentRef);
     return (
-        <div className="flex w-full fade-in">
+        <div className="flex w-full fade-in" ref={componentRef}>
             <div className="flex-initial w-180px relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
                     <div className="rounded-full w-100px h-100px of-hidden relative border-1">
@@ -27,7 +32,8 @@ function Story({story, quote}: {story?: IStory; quote?: string}){
                     </div>
                 </div>
             </div>
-            <div className="flex-auto max-w-70% bg-white rounded-4px flex flex-col p-25px gap-10px m-y-25px">
+            <div className={`fade-left opacity-0 transition-opacity ${isVisible ? 'animate opacity-100' : ''} 
+            flex-auto max-w-70% bg-white rounded-4px flex flex-col p-25px gap-10px m-y-25px`}>
                 {quote ? (
                     <q className="text-13px">
                     {quote}

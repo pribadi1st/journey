@@ -1,12 +1,15 @@
+"use client"
 import Image from 'next/image'
 import MyJourney from '@/components/journey/index'
 import FallenLeaves from '@/components/leaf'
+import Link from 'next/link'
 
 function Journey(){
     const profile = {
         name: 'Pribadi Ridwan Mulyono',
         title: 'Full stack developer',
-        email: 'pribadiridwan1st@©mail.com',
+        email: 'pribadiridwan1st@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/pribadi1st/',
         phone: '(+49) 17660943972',
         address: 'Wollanktraße 54c, 13359 Berlin',
         dateOfBirth: '05. December 1995',
@@ -39,6 +42,10 @@ function Journey(){
                         <br />
                         <p className='text-16px'>Email:</p>
                         <p className='text-16px'>{profile.email}</p>
+                        <br />
+                        <br />
+                        <p className='text-16px'>Linkedin:</p>
+                        <Link href={profile.linkedin} className='text-16px'>{profile.email}</Link>
                         <br />
                         <p className='text-16px'>Address:</p>
                         <p className='text-16px'>
