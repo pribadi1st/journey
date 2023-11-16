@@ -3,6 +3,7 @@ import Image from 'next/image'
 import MyJourney from '@/components/journey/index'
 import FallenLeaves from '@/components/leaf'
 import Link from 'next/link'
+import Audio from '@/components/audio'
 
 function Journey(){
     const profile = {
@@ -61,6 +62,7 @@ function Journey(){
             </div>
             <MyJourney className="w-full p-y-60px" />
             <FallenLeaves />
+            <Audio />
         </div>
     )   
 }
