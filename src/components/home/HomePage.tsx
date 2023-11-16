@@ -60,12 +60,12 @@ function HomePage() {
                         >
                             Journey
                         </Link>
-                        <Link
+                        {/* <Link
                             href="/skills"
                             className='text-xs rounded hover:bg-gray-200 hover:cursor-pointer p-4px'
                         >
                             Skills
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>  
             </nav>

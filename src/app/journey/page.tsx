@@ -43,9 +43,8 @@ function Journey(){
                         <p className='text-16px'>Email:</p>
                         <p className='text-16px'>{profile.email}</p>
                         <br />
-                        <br />
                         <p className='text-16px'>Linkedin:</p>
-                        <Link href={profile.linkedin} className='text-16px'>{profile.email}</Link>
+                        <Link href={profile.linkedin} className='text-16px'>Link</Link>
                         <br />
                         <p className='text-16px'>Address:</p>
                         <p className='text-16px'>

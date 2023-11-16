@@ -66,42 +66,42 @@ function QuoteComponent(){
 
 function Journey({className = ''}){
     const stories: IStory[] = [{
-        date: '12-08-2014',
+        date: 'August, 2014',
         story: 'I started my journey as a student in Bina Nusantara University',
         image: 'https://rekreartive.com/wp-content/uploads/2018/10/Logo-Binus-University-Universitas-Bina-Nusantara-Original-PNG.png'
     }, {
-        date: '01-02-2016',
+        date: 'February, 2016',
         image: '/slc.jpeg',
         story: 'After 1 semester of my studies, i applied and got accepted as a teaching assistant in my university',
         title: 'Teaching Assistant | Bina nusantara university',
         quote: 'I was excited to be able to teach and share my knowledge to students'
     }, {
-        date: '01-02-2017',
+        date: 'February, 2017',
         story: 'In my fifth semester, i join researcher team in my university',
         image: '/pajero.jpeg',
         title: 'Junior researcher | Bina nusantara university',
         quote: 'A lot of new things i learned from this experience, especially in the field of AI'
     }, {
-        date: '01-07-2018',
+        date: 'July, 2018',
         story: 'I got my first job as a mobile engineer in a startup company',
         image: 'https://media.licdn.com/dms/image/C560BAQGTngESjenkgw/company-logo_200_200/0/1630663513759/airpaz_com_logo?e=1707955200&v=beta&t=dyGhDd5Y2XQ-aO7_NxAtdnQ8nP9uLzBu-phUa9O-2WE',
         title: 'Mobile Engineer | Airpaz.com',
         quote: 'This open a new page in my life.'
     },{
-        date: '01-11-2018',
+        date: 'November, 2018',
         story: 'Horray, i graduated from my university',
         image: '/wisuda.jpeg'
     }, {
-        date: '01-01-2019',
+        date: 'January, 2019',
         story: 'Shifting my career from mobile engineer to front end engineer',
         title: 'Front end Engineer | Airpaz.com',
         image: 'https://media.licdn.com/dms/image/C560BAQGTngESjenkgw/company-logo_200_200/0/1630663513759/airpaz_com_logo?e=1707955200&v=beta&t=dyGhDd5Y2XQ-aO7_NxAtdnQ8nP9uLzBu-phUa9O-2WE',
     }, {
-        date: '01-03-2020',
+        date: 'March, 2020',
         story: 'Flew to Germany to pursue my dream',
         image: '/germany.png',
     }, {
-        date: '01-01-2023',
+        date: 'April, 2023',
         story: 'Here i am, working as a fullstack engineer and devOps in a startup company',
         title: 'Full stack & DevOps | Hyrd.de',
         image: 'https://media.licdn.com/dms/image/C560BAQEamhjRwbvjWw/company-logo_100_100/0/1644670558769/gethyrd_logo?e=1707955200&v=beta&t=sAF4USApyCevv_EFPgU_D77LL9qZNAQdByMLNJkwFH8'

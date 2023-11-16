@@ -19,12 +19,12 @@ const Navbar = () => {
                     >
                         My journey
                     </Link>
-                    <Link
+                    {/* <Link
                         href='skills'
                         className='p-10px rounded text-16px leading-30px hover:bg-gray-200 hover:cursor-pointer'
                     >
                         My Skills
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             
