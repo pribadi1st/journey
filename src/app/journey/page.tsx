@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import MyJourney from '@/components/journey/index'
+import FallenLeaves from '@/components/leaf'
 
 function Journey(){
     const profile = {
@@ -11,7 +12,7 @@ function Journey(){
         dateOfBirth: '05. December 1995',
     }
     return(
-        <div className="w-full min-h-100vh flex flex-col gap-20px">
+        <div className="w-full min-h-100vh flex flex-col">
             <div className='relative flex flex-col '>
                 <Image
                     src="/background.webp"
@@ -49,11 +50,11 @@ function Journey(){
                     </div>
                 </div>
             </div>
-            <div className='border-y-1px border-black w-max-1080px p-y-30px flex align-center justify-center'>
+            <div className='border-y-1px border-black w-max-1080px p-y-30px flex align-center justify-center m-t-20px'>
                 <h1 className='leading-45px text-38px'>My journey</h1>
             </div>
             <MyJourney className="w-full p-y-60px" />
-            
+            <FallenLeaves />
         </div>
     )   
 }

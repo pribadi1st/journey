@@ -14,6 +14,22 @@ const nextConfig = {
     // experimental: {
     //     webpackBuildWorker: true,
     // },
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'rekreartive.com',
+            port: '',
+            pathname: '/wp-content/**',
+          },
+          {
+            protocol: 'https',
+            hostname: 'media.licdn.com',
+            port: '',
+            pathname: '/**',
+          },
+        ],
+    },
 }
 
 module.exports = nextConfig
